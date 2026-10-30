@@ -62,9 +62,78 @@ Cada integrante dispone de un archivo identificativo con su nombre y la tarea as
 
 ## Tecnologías
 
-- Git
-- GitHub
-- Scrum
+- Python 3
+- [Flet](https://flet.dev/) (interfaz gráfica responsive)
+- Almacenamiento local en JSON
+- Arquitectura Modelo-Vista-Controlador (MVC)
+- Git y GitHub
+- Metodología Scrum
+
+---
+
+## Aplicación — Sprint 1 (Estructura base y autenticación)
+
+Aplicación del **Sistema de Monitorización Ambiental "Bajos de Argüelles"**.
+Esta primera entrega implementa la estructura MVC, el registro e inicio de
+sesión de usuarios con diferenciación por rol y la navegación básica entre
+pantallas.
+
+### Alcance cubierto
+
+| Código | Requisito | Estado |
+|--------|-----------|--------|
+| RF-01 | Registro de usuarios | ✅ |
+| RF-02 | Inicio de sesión | ✅ |
+| RF-03 | Almacenamiento mediante JSON | ✅ |
+| RF-04 | Navegación entre pantallas | ✅ |
+| RF-05 | Arquitectura MVC | ✅ |
+| RF-06 | Diseño inicial de interfaz gráfica | ✅ |
+| RNF-05 | Seguridad básica (hash SHA-256 + salt) | ✅ |
+
+### Estructura del proyecto (MVC)
+
+```
+Proyecto-Informatica-Grupo5/
+├── main.py                       # Punto de entrada (arranca Flet)
+├── requirements.txt
+└── src/
+    ├── app.py                    # Controlador de aplicación / enrutador de vistas
+    ├── models/                   # MODELO
+    │   ├── usuario.py            # Entidad Usuario + enum Rol
+    │   └── usuarios.json         # Almacén (se genera al arrancar)
+    ├── controllers/              # CONTROLADOR
+    │   ├── user_controller.py    # Persistencia JSON + seguridad (hash/salt)
+    │   └── login_controller.py   # Lógica de registro e inicio de sesión
+    └── views/                    # VISTA
+        ├── login_view.py         # LoginView
+        ├── register_view.py      # RegisterView
+        └── main_view.py          # MainView
+```
+
+### Puesta en marcha
+
+```bash
+# 1. Instalar dependencias
+python -m pip install -r requirements.txt
+
+# 2. Ejecutar la aplicación
+python main.py
+```
+
+Al arrancar por primera vez se crea `src/models/usuarios.json` con tres
+usuarios de demostración (uno por rol). Credenciales de prueba:
+
+| Rol | Correo | Contraseña |
+|-----|--------|------------|
+| Vecino | `vecino@arguelles.es` | `1234` |
+| Propietario | `bar@arguelles.es` | `1234` |
+| Autoridad | `ayto@arguelles.es` | `1234` |
+
+También es posible registrar nuevos usuarios desde la propia aplicación.
+
+> Los paneles (dashboards) específicos por rol con los datos de sensores se
+> desarrollarán en el Sprint 3. En el Sprint 1 la pantalla principal muestra
+> una bienvenida con el rol del usuario y un adelanto de dichos paneles.
 
 ---
 
