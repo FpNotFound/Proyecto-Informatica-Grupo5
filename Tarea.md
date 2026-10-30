@@ -1,1 +1,3 @@
-Tarea 1 - Sprint 1
+Nombre: Jimena Suárez-Valdés
+Tarea asignada: TAREA-01
+Sprint: 1
