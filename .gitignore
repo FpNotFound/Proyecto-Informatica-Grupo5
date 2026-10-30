@@ -1,0 +1,24 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+
+# --- Datos generados en tiempo de ejecución ---
+# usuarios.json se crea automáticamente al arrancar la app (con usuarios demo).
+# No se versiona para no subir datos/credenciales. Ver usuarios.example.json.
+src/models/usuarios.json
+
+# --- IDE ---
+.idea/
+.vscode/
+*.iml
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db

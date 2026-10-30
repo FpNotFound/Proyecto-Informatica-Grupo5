@@ -1,0 +1,9 @@
+[
+  {
+    "nombre": "Vecino Demo",
+    "email": "vecino@arguelles.es",
+    "rol": "Vecino",
+    "salt": "<cadena_aleatoria_hex_generada_por_usuario>",
+    "password_hash": "<sha256(salt + contraseña)>"
+  }
+]
