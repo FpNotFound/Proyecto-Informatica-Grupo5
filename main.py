@@ -1,22 +1,11 @@
-"""Punto de entrada de la aplicación "Bajos de Argüelles".
-
-Sistema de Monitorización Ambiental — Sprint 1 (estructura base y
-autenticación). Arranca la interfaz gráfica construida con Flet siguiendo el
-patrón Modelo-Vista-Controlador.
-
-Ejecución:
-    python main.py
-"""
-from __future__ import annotations
-
+"""Punto de entrada de la aplicación. Para ejecutarla: python main.py"""
 import flet as ft
 
 from src.app import App
 
 
-def main(page: ft.Page) -> None:
-    App(page).iniciar()
+def main(page):
+    App(page).ir_a_login()
 
 
-if __name__ == "__main__":
-    ft.run(main)
+ft.run(main)

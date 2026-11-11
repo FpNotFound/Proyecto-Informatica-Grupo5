@@ -1,65 +1,48 @@
-"""Modelo de datos de Usuario.
+"""MODELO: define al usuario y guarda los usuarios en usuarios.json."""
+import json
 
-Forma parte de la capa MODELO dentro de la arquitectura MVC del proyecto
-"Bajos de Argüelles". Define la entidad :class:`Usuario` y la enumeración de
-roles :class:`Rol`. La persistencia en ``usuarios.json`` la gestiona
-``UserController`` (capa controlador).
-"""
-from __future__ import annotations
+ROLES = ["Vecino", "Propietario", "Autoridad"]
 
-from dataclasses import dataclass
-from enum import Enum
+# usuarios.json está en la misma carpeta que este archivo.
+RUTA_JSON = __file__.replace("usuario.py", "usuarios.json")
 
 
-class Rol(str, Enum):
-    """Roles de usuario contemplados en el sistema.
-
-    En el Sprint 1 el rol se registra, se almacena y se muestra tras el login.
-    Los paneles (dashboards) diferenciados por rol se desarrollarán en el
-    Sprint 3 (Vecino, Propietario y Autoridad).
-    """
-
-    VECINO = "Vecino"
-    PROPIETARIO = "Propietario"
-    AUTORIDAD = "Autoridad"
-
-    @classmethod
-    def desde_texto(cls, texto: str) -> "Rol":
-        """Devuelve el rol correspondiente a un texto, ignorando mayúsculas."""
-        objetivo = str(texto).strip().lower()
-        for rol in cls:
-            if rol.value.lower() == objetivo:
-                return rol
-        raise ValueError(f"Rol no válido: {texto!r}")
-
-
-@dataclass
 class Usuario:
-    """Entidad que representa a un usuario registrado en el sistema."""
+    def __init__(self, nombre, email, rol, password_hash):
+        self.nombre = nombre
+        self.email = email
+        self.rol = rol
+        self.password_hash = password_hash
 
-    nombre: str
-    email: str
-    rol: Rol
-    salt: str
-    password_hash: str
-
-    def to_dict(self) -> dict:
-        """Serializa el usuario a un diccionario apto para JSON."""
+    def a_diccionario(self):
+        """Convierte el usuario en el formato que se guarda en el JSON."""
         return {
             "nombre": self.nombre,
             "email": self.email,
-            "rol": self.rol.value,
-            "salt": self.salt,
+            "rol": self.rol,
             "password_hash": self.password_hash,
         }
 
-    @classmethod
-    def from_dict(cls, data: dict) -> "Usuario":
-        """Reconstruye un usuario a partir de un diccionario leído del JSON."""
-        return cls(
-            nombre=data["nombre"],
-            email=data["email"],
-            rol=Rol.desde_texto(data["rol"]),
-            salt=data["salt"],
-            password_hash=data["password_hash"],
-        )
+
+def cargar_usuarios():
+    """Lee el JSON y devuelve la lista de usuarios (vacía si aún no existe)."""
+    try:
+        with open(RUTA_JSON, encoding="utf-8") as archivo:
+            datos = json.load(archivo)
+    except FileNotFoundError:
+        return []
+
+    usuarios = []
+    for d in datos:
+        usuarios.append(Usuario(d["nombre"], d["email"], d["rol"], d["password_hash"]))
+    return usuarios
+
+
+def guardar_usuarios(usuarios):
+    """Escribe la lista completa de usuarios en el JSON."""
+    datos = []
+    for usuario in usuarios:
+        datos.append(usuario.a_diccionario())
+
+    with open(RUTA_JSON, "w", encoding="utf-8") as archivo:
+        json.dump(datos, archivo, indent=2, ensure_ascii=False)
