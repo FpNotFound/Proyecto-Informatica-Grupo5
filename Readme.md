@@ -88,7 +88,7 @@ pantallas.
 | RF-04 | Navegación entre pantallas | ✅ |
 | RF-05 | Arquitectura MVC | ✅ |
 | RF-06 | Diseño inicial de interfaz gráfica | ✅ |
-| RNF-05 | Seguridad básica (hash SHA-256 + salt) | ✅ |
+| RNF-05 | Seguridad básica (hash SHA-256) | ✅ |
 
 ### Estructura del proyecto (MVC)
 
@@ -99,10 +99,10 @@ Proyecto-Informatica-Grupo5/
 └── src/
     ├── app.py                    # Controlador de aplicación / enrutador de vistas
     ├── models/                   # MODELO
-    │   ├── usuario.py            # Entidad Usuario + enum Rol
+    │   ├── usuario.py            # Usuario, roles y lectura/escritura del JSON
     │   └── usuarios.json         # Almacén (se genera al arrancar)
     ├── controllers/              # CONTROLADOR
-    │   ├── user_controller.py    # Persistencia JSON + seguridad (hash/salt)
+    │   ├── user_controller.py    # Alta y búsqueda de usuarios + hash SHA-256
     │   └── login_controller.py   # Lógica de registro e inicio de sesión
     └── views/                    # VISTA
         ├── login_view.py         # LoginView
