@@ -163,6 +163,7 @@ También es posible registrar nuevos usuarios desde la propia aplicación.
 
 - [`docs/ROLES.md`](docs/ROLES.md): qué pide y qué puede hacer cada rol, más los usuarios de prueba.
 - [`docs/GUIA_DEL_CODIGO.md`](docs/GUIA_DEL_CODIGO.md): conceptos básicos de Python, arquitectura, JSON, CRUD y recorridos completos.
+- [`docs/GUIA_SENSORES.md`](docs/GUIA_SENSORES.md): sensores simulados en todos los bares (con historial previo), semáforo, LEDs, ventilador, alertas a la policía, cierres temporales, reclamaciones y log de incidencias.
 
 ### Credenciales de prueba (Sprint 2)
 

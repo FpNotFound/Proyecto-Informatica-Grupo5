@@ -1,0 +1,16 @@
+[
+  {
+    "local": "NEG-001",
+    "fecha": "2026-11-12 23:51",
+    "tipo": "Nivel peligroso",
+    "autor": "Sistema de sensores",
+    "descripcion": "Temperatura 31.6 °C, humedad 75.5 %, CO2 1434 ppm."
+  },
+  {
+    "local": "NEG-001",
+    "fecha": "2026-11-13 02:51",
+    "tipo": "Niveles normalizados",
+    "autor": "Sistema de sensores",
+    "descripcion": "Los sensores vuelven a valores seguros."
+  }
+]

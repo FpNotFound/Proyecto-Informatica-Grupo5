@@ -52,30 +52,45 @@ Una vista **nunca** abre un archivo JSON y un modelo **nunca** dibuja nada.
 ## 3. Estructura de carpetas
 
 ```
-main.py                         Arranca la aplicación
+main.py                         Arranca la aplicación (con AppSensores)
 src/
 ├── app.py                      Cambia de pantalla y recuerda quién ha entrado
+├── app_sensores.py             ★ SENSORES · App + panel de sensores, detalle de bar
 ├── models/
 │   ├── archivo_json.py         ★ NUEVO · Lee y escribe CUALQUIER archivo JSON
 │   ├── usuario.py              Usuario + roles (ahora con código de negocio / ID policial)
 │   ├── local.py                ★ NUEVO · Local (bar, restaurante...)
 │   ├── ids_policiales.json     ★ NUEVO · Lista oficial de IDs policiales válidos
 │   ├── usuarios.json           Se crea solo (no se sube a GitHub)
-│   └── locales.json            ★ NUEVO · Se crea solo (no se sube a GitHub)
+│   ├── locales.json            ★ NUEVO · Se crea solo (no se sube a GitHub)
+│   ├── sensor.py               ★ SENSORES · Sensores, historial y umbrales
+│   ├── simulador_sensores.py   ★ SENSORES · Se inventa las medidas
+│   ├── vigilancia.py           ★ SENSORES · Incidencias, cierres y notificaciones
+│   └── sensores.json, historial_sensores.json, incidencias.json, notificaciones.json
+│                               ★ SENSORES · Historial previo ya hecho
 ├── controllers/
 │   ├── user_controller.py      Crea y busca usuarios, protege contraseñas
 │   ├── login_controller.py     Registro (con reglas por rol) e inicio de sesión
-│   └── local_controller.py     ★ NUEVO · CRUD de locales + permisos por rol
+│   ├── local_controller.py     ★ NUEVO · CRUD de locales + permisos por rol
+│   ├── sensor_controller.py    ★ SENSORES · Semáforo, LEDs, ventilador y medidas
+│   └── vigilancia_controller.py ★ SENSORES · Alertas, cierres y reclamaciones
 └── views/
     ├── login_view.py           Pantalla de inicio de sesión
     ├── register_view.py        Registro (el campo extra cambia según el rol)
     ├── main_view.py            Pantalla principal según el rol
     ├── locales_view.py         ★ NUEVO · Lista de locales con botones según el rol
-    └── local_form_view.py      ★ NUEVO · Formulario para crear / editar un local
+    ├── local_form_view.py      ★ NUEVO · Formulario para crear / editar un local
+    ├── piezas_sensores.py      ★ SENSORES · Semáforo, LED, cartel y ventanita
+    ├── panel_sensores_view.py  ★ SENSORES · Panel principal según el rol
+    ├── bar_sensores_view.py    ★ SENSORES · Detalle de un bar
+    └── locales_estado_view.py  ★ SENSORES · Lista de locales con semáforo
 docs/
 ├── ROLES.md                    Documentación de los roles
-└── GUIA_DEL_CODIGO.md          Este documento
+├── GUIA_DEL_CODIGO.md          Este documento
+└── GUIA_SENSORES.md            ★ SENSORES · Explicación de sensores, alertas y cierres
 ```
+
+Los archivos marcados con «SENSORES» se explican en [`GUIA_SENSORES.md`](GUIA_SENSORES.md).
 
 ---
 
