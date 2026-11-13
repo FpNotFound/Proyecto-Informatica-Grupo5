@@ -1,0 +1,9 @@
+[
+  {
+    "codigo": "NEG-001",
+    "nombre": "Bar Demo",
+    "direccion": "Calle Ferraz 10",
+    "tipo": "Bar",
+    "aforo": 80
+  }
+]

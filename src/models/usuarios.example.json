@@ -3,6 +3,24 @@
     "nombre": "Vecino Demo",
     "email": "vecino@arguelles.es",
     "rol": "Vecino",
-    "password_hash": "<sha256(contraseña)>"
+    "password_hash": "<sha256(contraseña)>",
+    "codigo_negocio": "",
+    "id_policial": ""
+  },
+  {
+    "nombre": "Bar Demo",
+    "email": "bar@arguelles.es",
+    "rol": "Propietario",
+    "password_hash": "<sha256(contraseña)>",
+    "codigo_negocio": "NEG-001",
+    "id_policial": ""
+  },
+  {
+    "nombre": "Ayuntamiento Demo",
+    "email": "ayto@arguelles.es",
+    "rol": "Autoridad",
+    "password_hash": "<sha256(contraseña)>",
+    "codigo_negocio": "",
+    "id_policial": "POL-0001"
   }
 ]

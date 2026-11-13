@@ -1,0 +1,39 @@
+USUARIOS DE PRUEBA - Bajos de Argüelles (Sprint 2)
+=====================================================
+
+Cuentas creadas automáticamente al abrir la aplicación por primera vez.
+Todas usan la contraseña: 1234
+
+
+1. VECINO
+   Nombre:          Vecino Demo
+   Correo:          vecino@arguelles.es
+   Contraseña:      1234
+   Código especial: (ninguno)
+   Puede:           ver la lista de locales.
+
+
+2. PROPIETARIO
+   Nombre:            Bar Demo
+   Correo:            bar@arguelles.es
+   Contraseña:        1234
+   Código de negocio: NEG-001  (local "Bar Demo", Calle Ferraz 10)
+   Puede:             ver los locales y editar solo el suyo (NEG-001).
+
+
+3. AUTORIDAD
+   Nombre:      Ayuntamiento Demo
+   Correo:      ayto@arguelles.es
+   Contraseña:  1234
+   ID policial: POL-0001
+   Puede:       crear, editar y eliminar cualquier local.
+
+
+-----------------------------------------------------
+CÓDIGOS LIBRES PARA PROBAR EL REGISTRO
+-----------------------------------------------------
+IDs policiales sin usar (rol Autoridad): POL-0002, POL-0003, POL-0004, POL-0005
+
+Códigos de negocio (rol Propietario): NEG-001 ya tiene dueño.
+Para registrar un propietario nuevo, entra primero como Autoridad,
+crea un local (por ejemplo NEG-002) y usa ese código al registrarte.
