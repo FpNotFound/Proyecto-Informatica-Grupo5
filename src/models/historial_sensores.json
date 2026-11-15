@@ -1,0 +1,452 @@
+[
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.4,
+    "fecha": "2026-11-12 17:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 23.5,
+    "fecha": "2026-11-12 18:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.9,
+    "fecha": "2026-11-12 19:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 26.0,
+    "fecha": "2026-11-12 20:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 21.2,
+    "fecha": "2026-11-12 21:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.0,
+    "fecha": "2026-11-12 22:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 31.6,
+    "fecha": "2026-11-12 23:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 33.7,
+    "fecha": "2026-11-13 00:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 31.5,
+    "fecha": "2026-11-13 01:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 23.8,
+    "fecha": "2026-11-13 02:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.4,
+    "fecha": "2026-11-13 03:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 25.0,
+    "fecha": "2026-11-13 04:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 25.0,
+    "fecha": "2026-11-13 05:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.8,
+    "fecha": "2026-11-13 06:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 25.9,
+    "fecha": "2026-11-13 07:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.9,
+    "fecha": "2026-11-13 08:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.9,
+    "fecha": "2026-11-13 09:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.2,
+    "fecha": "2026-11-13 10:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.7,
+    "fecha": "2026-11-13 11:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 22.4,
+    "fecha": "2026-11-13 12:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 21.5,
+    "fecha": "2026-11-13 13:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 24.8,
+    "fecha": "2026-11-13 14:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 23.8,
+    "fecha": "2026-11-13 15:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 21.6,
+    "fecha": "2026-11-13 16:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "temperatura",
+    "valor": 25.4,
+    "fecha": "2026-11-13 17:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 53.6,
+    "fecha": "2026-11-12 17:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 45.0,
+    "fecha": "2026-11-12 18:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 58.5,
+    "fecha": "2026-11-12 19:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 51.0,
+    "fecha": "2026-11-12 20:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 56.9,
+    "fecha": "2026-11-12 21:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 52.6,
+    "fecha": "2026-11-12 22:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 75.5,
+    "fecha": "2026-11-12 23:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 72.6,
+    "fecha": "2026-11-13 00:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 80.9,
+    "fecha": "2026-11-13 01:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 56.4,
+    "fecha": "2026-11-13 02:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 49.6,
+    "fecha": "2026-11-13 03:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 59.2,
+    "fecha": "2026-11-13 04:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 44.0,
+    "fecha": "2026-11-13 05:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 52.3,
+    "fecha": "2026-11-13 06:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 59.7,
+    "fecha": "2026-11-13 07:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 45.9,
+    "fecha": "2026-11-13 08:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 51.0,
+    "fecha": "2026-11-13 09:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 55.2,
+    "fecha": "2026-11-13 10:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 46.4,
+    "fecha": "2026-11-13 11:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 52.9,
+    "fecha": "2026-11-13 12:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 41.3,
+    "fecha": "2026-11-13 13:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 44.7,
+    "fecha": "2026-11-13 14:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 40.4,
+    "fecha": "2026-11-13 15:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 52.4,
+    "fecha": "2026-11-13 16:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "humedad",
+    "valor": 42.3,
+    "fecha": "2026-11-13 17:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 729,
+    "fecha": "2026-11-12 17:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 494,
+    "fecha": "2026-11-12 18:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 582,
+    "fecha": "2026-11-12 19:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 520,
+    "fecha": "2026-11-12 20:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 546,
+    "fecha": "2026-11-12 21:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 599,
+    "fecha": "2026-11-12 22:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 1434,
+    "fecha": "2026-11-12 23:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 1454,
+    "fecha": "2026-11-13 00:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 1351,
+    "fecha": "2026-11-13 01:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 468,
+    "fecha": "2026-11-13 02:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 739,
+    "fecha": "2026-11-13 03:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 854,
+    "fecha": "2026-11-13 04:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 654,
+    "fecha": "2026-11-13 05:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 733,
+    "fecha": "2026-11-13 06:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 567,
+    "fecha": "2026-11-13 07:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 851,
+    "fecha": "2026-11-13 08:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 635,
+    "fecha": "2026-11-13 09:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 535,
+    "fecha": "2026-11-13 10:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 658,
+    "fecha": "2026-11-13 11:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 675,
+    "fecha": "2026-11-13 12:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 699,
+    "fecha": "2026-11-13 13:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 621,
+    "fecha": "2026-11-13 14:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 453,
+    "fecha": "2026-11-13 15:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 787,
+    "fecha": "2026-11-13 16:51"
+  },
+  {
+    "local": "NEG-001",
+    "tipo": "calidad_aire",
+    "valor": 500,
+    "fecha": "2026-11-13 17:51"
+  }
+]

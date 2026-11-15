@@ -54,7 +54,7 @@ Ejemplos:
 
 ## Sprint Actual
 
-**Sprint 1**
+**Sprint 2**
 
 Cada integrante dispone de un archivo identificativo con su nombre y la tarea asignada para este sprint.
 
@@ -134,6 +134,49 @@ También es posible registrar nuevos usuarios desde la propia aplicación.
 > Los paneles (dashboards) específicos por rol con los datos de sensores se
 > desarrollarán en el Sprint 3. En el Sprint 1 la pantalla principal muestra
 > una bienvenida con el rol del usuario y un adelanto de dichos paneles.
+
+---
+
+## Aplicación — Sprint 2 (Roles, CRUD de locales y JSON)
+
+### Alcance cubierto
+
+| Tarea | Estado |
+|-------|--------|
+| Modificación de roles y funciones especiales | ✅ |
+| Operaciones CRUD para la gestión de locales | ✅ |
+| Lectura y escritura en JSON locales | ✅ |
+| Documentación explícita de los roles | ✅ |
+
+### Novedades
+
+- **Registro por rol.** Los **Propietarios** deben introducir el *código de
+  negocio* de su local, y la **Autoridad** su *ID de identificación policial*.
+  Los Vecinos se registran igual que antes.
+- **CRUD de locales.** La Autoridad crea, edita y elimina locales. El
+  Propietario edita solo el suyo, y el Vecino solo puede verlos.
+- **JSON.** Toda la lectura y escritura pasa por `src/models/archivo_json.py`.
+  Los datos se guardan en `usuarios.json`, `locales.json` e `ids_policiales.json`.
+- **Código comentado línea a línea** para que se entienda sin saber mucho Python.
+
+### Documentación
+
+- [`docs/ROLES.md`](docs/ROLES.md): qué pide y qué puede hacer cada rol, más los usuarios de prueba.
+- [`docs/GUIA_DEL_CODIGO.md`](docs/GUIA_DEL_CODIGO.md): conceptos básicos de Python, arquitectura, JSON, CRUD y recorridos completos.
+- [`docs/GUIA_SENSORES.md`](docs/GUIA_SENSORES.md): sensores simulados en todos los bares (con historial previo), semáforo, LEDs, ventilador, alertas a la policía, cierres temporales, reclamaciones y log de incidencias.
+
+### Credenciales de prueba (Sprint 2)
+
+| Rol | Correo | Contraseña | Código |
+|-----|--------|------------|--------|
+| Vecino | `vecino@arguelles.es` | `1234` | — |
+| Propietario | `bar@arguelles.es` | `1234` | Negocio `NEG-001` |
+| Autoridad | `ayto@arguelles.es` | `1234` | ID policial `POL-0001` |
+
+IDs policiales libres para registrar nuevas autoridades: `POL-0002` a `POL-0005`.
+
+> Si ya tenías `src/models/usuarios.json` del Sprint 1, bórralo para que se
+> regenere con los nuevos usuarios de prueba.
 
 ---
 

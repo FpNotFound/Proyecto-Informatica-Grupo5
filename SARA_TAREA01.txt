@@ -1,3 +1,0 @@
-Nombre: Sara
-Tarea asignada: TAREA-01
-Sprint: 1
